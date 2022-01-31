@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css";
+import Form from "./FooterForm";
 
 const Footer = () => {
     return (
@@ -8,9 +9,9 @@ const Footer = () => {
                 <h1>Rafael Portillo Pérez</h1>
                 <p>Parla (Madrid)</p>
             </div>
+            <Form/>
+
             <div className="footer-contact">
-                <h3>Es el momento de crear</h3>
-                <p>Trabajemos juntos y construyamos algo grande</p>
             </div>
             <div className="footer-sns">
                 <div className="sns-links">
