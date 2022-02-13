@@ -5,10 +5,7 @@ import Form from "./FooterForm";
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-info">
-                <h1>Rafael Portillo Pérez</h1>
-                <p>Parla (Madrid)</p>
-            </div>
+            
             <Form/>
 
             <div className="footer-contact">
