@@ -5,9 +5,7 @@ import Form from "./FooterForm";
 const Footer = () => {
     return (
         <footer className="footer">
-            
             <Form/>
-
             <div className="footer-contact">
             </div>
             <div className="footer-sns">

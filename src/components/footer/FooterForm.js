@@ -1,165 +1,112 @@
-import React from 'react'
+import React, {useState} from 'react';
 import "./FooterForm.css";
-class FooterForm extends React.Component {
-    constructor(args) {
-        super(args)
-        this.state = {
-            name:'',
-            email:'',
-            subject:'',
-            comments:'',
-            acept:'',
-            message:''
-        }
-    }
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-    onChange(e){
-        if(e.target.name === 'acept') {
-            this.setState({
-                [e.target.name]: e.target.checked
-            })  
-        } else {
-            this.setState({
-                [e.target.name]: e.target.value
-            })  
-        }
+const FooterForm = () => {
+    const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+	return (
+		<>
+        <Formik
+            initialValues={{ 
+                name: '',
+                email: '',
+                subject: '',
+                comments :''
+            }}
+            validate={(valores)=>{
+                let errores = {};
 
-    }
+                if(!valores.email) {
+                    errores.email = 'Por favor, ingrese un correo'
+                }else if(!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)){
+                    errores.email = 'Debe ser un correo valido'
+                }
 
-    handleSubmit(event){
+                if(!valores.name) {
+                    errores.name = 'Por favor, ingrese un nombre'
+                } else if(!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)){
+                    errores.name = 'El nombre solo puede contener letras y espacios'
+                }
 
-       // if(!this.validate()) {
-         //   return;
-       // }
+                if(!valores.subject) {
+                    errores.subject = 'Por favor, indique un asunto'
+                }
 
-        const request = new XMLHttpRequest();
-        const data = JSON.stringify({
-            name    : this.state.name,
-            email   : this.state.email,
-            subject : this.state.subject,
-            comments : this.state.comments,
-        })
-        request.open("POST", 'http://localhost:8000/api/contact', false);
+                if(!valores.comments) {
+                    errores.comments = 'No ha indicado ningún comentario'
+                }
 
-        request.addEventListener('sta', function(){
-            if (this.status === 200) {
-                console.log(this.responseText);
-            }
-        });
+                return errores;
+            }}
 
-        request.setRequestHeader("Content-Type", "AppliCAtion/Json");
-        request.send(data);
-    }
-        /*
-        fetch('http://localhost:8000/api/contact ', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name    : this.state.name,
-            email   : this.state.email,
-            subject : this.state.subject,
-            comments : this.state.comments,
-        })
-    });
+            onSubmit={(valores, {resetForm})=>{
+                resetForm();
+                console.log("Formulario enviado!");
+                cambiarFormularioEnviado(true);
+                setTimeout(()=> cambiarFormularioEnviado(false), 5000)
+            }}
+        >
+            {({errors})=>(
+                <Form className="formulario">
+                    <div>
+                        <label htmlFor="name">Nombre</label>
+                        <Field
+                            type="text"
+                            name="name"
+                            placeholder="Nombre"
+                            id="name"                            
+                        />
+                        <ErrorMessage name="name" component={()=>(
+                            <div className="error">{errors.name}</div>
+                        )}/>
+                    </div>
 
-    event.preventDefault();
-        this.setState({
-            message:('Enviado correctamente!')
-        })
-    }
-/*
-     validate() {
-         const messages = [];
-         const errors = 0;
-         if(this.state.acept !== true ) {
-             errors = 1;
-             messages.push({msg:'Debe aceptar las condicones'})
-         }
- 
-         if(this.state.name.value !== "" ) {
-             errors = 1;
-             messages.push({msg:'Debe aceptar las condicones'})
-         }
-         if(this.state.email.value !== "" ) {
-             errors = 1;
-             messages.push({msg:'Debe aceptar las condicones'})
-         }
-         if(this.state.comments.value !== "" ) {
-             errors = 1;
-             messages.push({msg:'Debe aceptar las condicones'})
-         }
- 
-         if (errors === 1) {
-             messages.forEach(error => {
-                 this.setState({
-                     message:error.msg
-                 })
-             });
-             return false;
-         }
- 
-         return true;
- 
-     }
-     */
+                    <div>
+                        <label htmlFor="email">Email</label>
+                        <Field
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            id="email"
+                        />
+                        <ErrorMessage name="email" component={()=>(
+                            <div className="error">{errors.email}</div>
+                        )}/>
+                    </div>
+                    <div>
+                        <label htmlFor="subject">Asunto</label>
+                        <Field
+                            type="text"
+                            name="subject"
+                            placeholder="Asunto del mensaje"
+                            id="subject"
+                        />
+                        <ErrorMessage name="subject" component={()=>(
+                            <div className="error">{errors.subject}</div>
+                        )}/>
+                    </div>
+                    <div>
+                        <label htmlFor="comments">Mensaje</label>
+                        <Field
+                            name="comments"
+                            as="textarea"
+                            placeholder="Deja aquí tú mensaje"
+                            id="comments"
+                        /> 
+                        <ErrorMessage name="comments" component={()=>(
+                            <div className="error">{errors.comments}</div>
+                        )}/>
+                    </div>
 
-
-    render(){
-        return (
-            <div className="formulario">
-                            <h1>Formulario de contacto</h1><br/>
-
-                            <h3>Escribeme y en breve me pondre en contacto contigo</h3><br/>
-                            <p>
-                                <label htmlFor="name" className="name"> Nombre: </label>
-                                <span className="obligatorio">*</span>
-                                <input 
-                                    type="text" id="name" name="name" 
-                                    value={this.state.name} 
-                                    onChange={this.onChange.bind(this)}/>
-                            </p>
-                            <p>
-                                <label htmlFor="email" className="email"> Email: </label>  
-                                <span className="obligatorio">*</span>        
-                                <input
-                                    type="text" name="email" id="email"
-                                    value={this.state.email} 
-                                    onChange={this.onChange.bind(this)}/>   
-                            </p>
-                            <p>
-                                <label htmlFor="subject" className="subject"> Asunto: </label>  
-                                <span className="obligatorio">*</span>        
-                                <input
-                                    type="text" name="subject" id="subject"
-                                    value={this.state.subject} 
-                                    onChange={this.onChange.bind(this)}/>   
-                            </p>
-                            <p>
-                                <label htmlFor="comments" className="mensaje"> Mensaje: </label>
-                                <span className="obligatorio">*</span>
-                                <textarea 
-                                    name="comments" placeholder="Deja aquí tus comentarios" id="comments"
-                                    value={this.state.comments} 
-                                    onChange={this.onChange.bind(this)}/> 
-                            </p>
-                            <p>
-                                <button onClick={this.handleSubmit} className="button_form">
-                                    <p>Enviar</p> 
-                                </button>
-                                <span style={{ color:'green' }}>{this.state.message}</span>
-                            </p>
-                            <p className="aviso">
-                                <span className="obligatorio"> * </span>los campos son obligatorios.
-                            </p>
-            </div>
-        )
-    }
+                    <button type="submit">Enviar</button>
+                    {formularioEnviado && <p className="exito">Formulario enviado con exito! </p>}
+                </Form>
+            )}
+        </Formik>
+            
+		</>
+	);
 }
-
-
 
 
 export default FooterForm
