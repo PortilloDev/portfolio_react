@@ -1,9 +1,20 @@
 import React, {useState} from 'react';
 import "./FooterForm.css";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import {sendMessage} from './../services/index';
 
 const FooterForm = () => {
     const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+    //const [formularioNoEnviado, cambiarFormularioNoEnviado] = useState(false);
+    
+    const handleSubmit = (data) => {
+        let status = ''
+        
+        status = sendMessage(data);
+
+        return status;
+    }
+    
 	return (
 		<>
         <Formik
@@ -38,16 +49,18 @@ const FooterForm = () => {
 
                 return errores;
             }}
-
+            
             onSubmit={(valores, {resetForm})=>{
                 resetForm();
+                handleSubmit(valores)
                 console.log("Formulario enviado!");
                 cambiarFormularioEnviado(true);
                 setTimeout(()=> cambiarFormularioEnviado(false), 5000)
+                
             }}
         >
             {({errors})=>(
-                <Form className="formulario">
+                <Form className="formulario" handleSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Nombre</label>
                         <Field
