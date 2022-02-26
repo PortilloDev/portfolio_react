@@ -12,6 +12,6 @@ export async function sendMessage (dataFromForm) {
 
         return response.status
     } catch(e) {
-        console.log(e)
+        console.log(e.status)
     }
 }

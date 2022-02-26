@@ -4,6 +4,7 @@
     align-items: center;
     background-color: black;
     padding: 30px 0 30px 0;
+  
 }
 
 .carousel-title {
@@ -68,6 +69,10 @@
 
 .BrainhubCarousel__arrows:hover {
     border-color: black !important;
+}
+
+.BrainhubCarousel__track, .BrainhubCarousel__track--transition, .BrainhubCarousel__track--draggable{
+    margin-left: 1400px !important;
 }
 
 @media screen and (max-width: 760px) {

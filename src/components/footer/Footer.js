@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="footer-contact">
                 <div className="contact-description">
                 <h1>Contacto</h1>
-                    <br/> <br/>
-                    <p>Tienes algo que contarme, dejame tus datos y hablemos</p>
+                    <br/>
+                    <p>Hola, Si deseas que colaboremos juntos, puede ponerse en contacto conmigo desde el formulario o mis redes sociales.</p>
                 </div>
                 <div className="contact-form">
                     <Form/>
@@ -26,14 +26,14 @@ const Footer = () => {
                     <a href="https://es-es.facebook.com/" target="_blank" rel="noreferrer">
                         <i className="fab fa-twitter twitter"></i>
                     </a>
-                    <a href="https://es-es.facebook.com/" target="_blank" rel="noreferrer">
+                    <a href="mailto:rafaportiperez@gmail.com" target="_blank" rel="noreferrer">
                         <i className="fas fa-envelope envelope"></i>
                     </a>
                 </div>
                 {/* div design */}
                 <div className="design-by">
                     <a href="https://notasweb.me" target="_blank" rel="noreferrer" className="design_autor">
-                            Diseñado por Iván Portillo, creador de Notasweb
+                    © Diseñado por Iván Portillo, desarrollador y creador de contenido en Notasweb 
                     </a>    
                 </div>
             </div>
