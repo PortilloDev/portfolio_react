@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./FooterForm.css";
+import "./Form.css";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import {sendMessage} from './../services/index';
 

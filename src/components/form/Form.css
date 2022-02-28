@@ -1,4 +1,26 @@
 
+.section-contact{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 70vh;
+    padding: 100px 0 100px 0;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 0 100px 0 100px;
+}
+.contact-form{
+    width: 45%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+}
+
 .formulario {
 	width: 80%;
     background: #fff;
@@ -9,6 +31,7 @@
     align-content: stretch;
     flex-direction: column;
     flex-wrap: nowrap;
+	border: outset;
 
 }
 
@@ -92,20 +115,30 @@ input[placeholder] {
 }
 
 @media screen and (max-width: 760px) {
+	.section-contact{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+		width: revert;
+    }
+	.contact-description {
+		width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+	}
+	.contact-form{
+		width: 100%;
+        margin-bottom: 50px;
+		text-align: center;
+	}
 	.formulario {
-		width: 65%;
+		width: 95%;
 		background: #fff;
 		border-radius: 30px;
 		padding: 20px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-		display: inline-flex;
-		align-content: flex-start;
-		flex-direction: column;
-		flex-wrap: nowrap;
 		text-align:left;
 		gap: 2px;
-	}
-	.contact-description {
-		margin-top: 100px;
+		margin: auto;
 	}
 }

@@ -1,18 +1,16 @@
 import React from 'react'
 import "./Footer.css";
-import Form from "./FooterForm";
+
 const Footer = () => {
     return (
         <footer className="footer">
+            <div className="footer-info">
+                <h1>Rafael Portillo Pérez</h1>
+                <p>Parla (Madrid)</p>
+            </div>
             <div className="footer-contact">
-                <div className="contact-description">
-                <h1>Contacto</h1>
-                    <br/>
-                    <p>Hola, Si deseas que colaboremos juntos, puede ponerse en contacto conmigo desde el formulario o mis redes sociales.</p>
-                </div>
-                <div className="contact-form">
-                    <Form/>
-                </div>
+                <h3>Es el momento de crear</h3>
+                <p>Trabajemos juntos y construyamos algo grande</p>
             </div>
             <div className="footer-sns">
                 {/* div links */}
@@ -23,7 +21,7 @@ const Footer = () => {
                     <a href="https://twitter.com/rafaportilloper" target="_blank" rel="noreferrer">
                         <i className="fab fa-facebook facebook"></i>
                     </a>
-                    <a href="https://es-es.facebook.com/" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/rafaportilloper" target="_blank" rel="noreferrer">
                         <i className="fab fa-twitter twitter"></i>
                     </a>
                     <a href="mailto:rafaportiperez@gmail.com" target="_blank" rel="noreferrer">
