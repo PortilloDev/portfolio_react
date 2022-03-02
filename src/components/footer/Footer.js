@@ -4,14 +4,6 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-info">
-                <h1>Rafael Portillo Pérez</h1>
-                <p>Parla (Madrid)</p>
-            </div>
-            <div className="footer-contact">
-                <h3>Es el momento de crear</h3>
-                <p>Trabajemos juntos y construyamos algo grande</p>
-            </div>
             <div className="footer-sns">
                 {/* div links */}
                 <div className="sns-links">

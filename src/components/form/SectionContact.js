@@ -7,11 +7,11 @@ const SectionContact = () => {
                 <h1>Contacto</h1>
                     <br/>
                     <p>Hola, si deseas que colaboremos juntos, puede ponerse en contacto conmigo desde el formulario o mis redes sociales.</p>
-                </div>
-                <div className="contact-form">
-                    <Form/>
-                </div>
             </div>
+            <div className="contact-form">
+                <Form/>
+            </div>
+        </div>
     )
 }
 

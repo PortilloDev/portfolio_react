@@ -5,12 +5,12 @@
     color: black;
     height: 70vh;
     padding: 100px 0 100px 0;
+	margin-bottom: 20vh;
 }
 
 .contact-description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 55%;
     padding: 0 100px 0 100px;
 }

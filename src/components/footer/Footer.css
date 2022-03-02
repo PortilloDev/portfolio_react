@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: black;
     color: white;
     padding-top: 180px;
@@ -47,6 +47,7 @@
     width: 100%;
     align-items: flex-start;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
     
 }
 .sns-links > a{
