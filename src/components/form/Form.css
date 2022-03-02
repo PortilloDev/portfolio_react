@@ -1,0 +1,144 @@
+
+.section-contact{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 71vh;
+    padding: 100px 0 100px 0;
+	margin-bottom: 25vh;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 0 100px 0 100px;
+}
+.contact-form{
+    width: 45%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+}
+
+.formulario {
+	width: 80%;
+    background: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	display: inline-flex;
+    align-content: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	border: outset;
+
+}
+
+.formulario > div {
+	margin-bottom: 20px;
+}
+
+.formulario label {
+	display: block;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+	font-family: 'Roboto', sans-serif;
+}
+
+.formulario input,
+.formulario textarea {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid #e2e2e2;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 5px;
+	color: #1f1f1f;
+	font-family: 'Roboto', sans-serif;
+	resize: none;
+}
+
+.formulario input:focus {
+	outline: none;
+	border: 2px solid #0085FF;
+}
+
+.formulario .error {
+	color: #e92b2d;
+	font-weight: 600;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.formulario button[type="submit"] {
+	display: block;
+	background: black;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	padding: 10px;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 16px;
+	transition: .3s ease all;
+	font-family: 'Roboto', sans-serif;
+}
+textarea[placeholder],
+input[placeholder] {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.formulario button[type="submit"]:hover {
+	background: rgba(32, 29, 29, 0.349);
+}
+
+.formulario .exito {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+	color: #02a802;
+	font-family: 'Roboto', sans-serif;
+}
+.formulario .fallo {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+	color: #a80202;
+	font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 760px) {
+	.section-contact{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+		width: revert;
+    }
+	.contact-description {
+		width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+	}
+	.contact-form{
+		width: 100%;
+        margin-bottom: 50px;
+		text-align: center;
+	}
+	.formulario {
+		width: 95%;
+		background: #fff;
+		border-radius: 30px;
+		padding: 20px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		text-align:left;
+		gap: 2px;
+		margin: auto;
+	}
+}

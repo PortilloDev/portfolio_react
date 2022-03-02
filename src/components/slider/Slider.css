@@ -70,6 +70,10 @@
     border-color: black !important;
 }
 
+.BrainhubCarousel__track, .BrainhubCarousel__track--transition, .BrainhubCarousel__track--draggable{
+    margin-left: 1400px !important;
+}
+
 @media screen and (max-width: 760px) {
     .carousel-container {
         flex-direction: column;

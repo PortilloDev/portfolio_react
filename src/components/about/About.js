@@ -8,7 +8,12 @@ const About = () => {
             <div className="about-desc">
                 <h3>Sobre mí</h3>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt
+                Mi nombre es Rafael Portillo soy Guitarrista. <br/> Durante mi trayectoria he formado 
+                parte de diferentes proyectos musicales tales como 
+                <a href="https://www.instagram.com/yellowsandmb/" target="_blank" rel="noreferrer"> Yellow Sand</a>, 
+                <a href="https://www.instagram.com/fullsexband/" target="_blank" rel="noreferrer"> Full Sex </a>
+                y además lo he compaginado con mi proyecto personal,
+                <a href="https://www.instagram.com/blue_rhino_record/" target="_blank" rel="noreferrer"> Blue Rhino Record</a>, del que también soy productor.
                 </p>
             </div>
             <div className="about-img">

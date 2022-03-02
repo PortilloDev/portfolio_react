@@ -5,7 +5,7 @@ import Foto3 from '../../media/foto3.jpg';
 import Foto4 from '../../media/foto4.jpg';
 import Foto5 from '../../media/foto5.jpg';
 import Foto6 from '../../media/foto6.jpg';
-import Foto7 from '../../media/foto7.jpg';
+
 import "./Slider.css";
 
 const slidesInfo = [
@@ -37,11 +37,6 @@ const slidesInfo = [
     {
         src: Foto6,
         alt: "Foto 6",
-        desc: "Descripción foto"
-    },
-    {
-        src: Foto7,
-        alt: "Foto 7",
         desc: "Descripción foto"
     }
 ]
