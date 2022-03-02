@@ -6,7 +6,7 @@ const SectionContact = () => {
             <div className="contact-description">
                 <h1>Contacto</h1>
                     <br/>
-                    <p>Hola, si deseas que colaboremos juntos, puede ponerse en contacto conmigo desde el formulario o mis redes sociales.</p>
+                    <p> Si te gusta lo que hago, quieres pasar a saludar o crees que podemos colaborar escríbeme a traves del formulario para que nos pongamos en contacto.</p>
             </div>
             <div className="contact-form">
                 <Form/>
