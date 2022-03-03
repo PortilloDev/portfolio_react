@@ -12,32 +12,32 @@ const slidesInfo = [
     {
         src: Foto1,
         alt: "Foto 1",
-        desc: "Descripción foto"
+        desc: "Con Yellow Sand"
     },
     {
         src: Foto2,
         alt: "Foto 2",
-        desc: "Descripción foto"
+        desc: "Ensayo con Full Sex"
     },
     {
         src: Foto3,
         alt: "Foto 3",
-        desc: "Descripción foto"
+        desc: "Concierto festival Fuenlabrada 2018"
     },
     {
         src: Foto4,
         alt: "Foto 4",
-        desc: "Descripción foto"
+        desc: "Acustico en Parla"
     },
     {
         src: Foto5,
         alt: "Foto 5",
-        desc: "Descripción foto"
+        desc: "Concierto festival Fuenlabrada 2019"
     },
     {
         src: Foto6,
         alt: "Foto 6",
-        desc: "Descripción foto"
+        desc: "Estudio de grabación"
     }
 ]
 
