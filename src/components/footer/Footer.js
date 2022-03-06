@@ -23,7 +23,7 @@ const Footer = () => {
                 {/* div design */}
                 <div className="design-by">
                     <a href="https://notasweb.me" target="_blank" rel="noreferrer" className="design_autor">
-                    © Diseñado por Iván Portillo, desarrollador y creador de contenido en Notasweb 
+                    © Diseñado por Iván Portillo, desarrollador y creador de contenido en Notasweb.me 
                     </a>    
                 </div>
             </div>

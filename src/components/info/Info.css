@@ -4,7 +4,7 @@
     background-color: white;
   
     margin-bottom: 100vh;*/
-    display: flex;
+    display: grid;
     vertical-align: center;
     align-items: center;
     background-color: white;
@@ -24,9 +24,20 @@
     margin-right: auto;
 }
 
+.spoty-container{
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+.spoty{
+
+    border-radius:12px;
+}
 @media screen and (max-width: 760px) {
     .info-container {
-        height: 200px;
+        height: auto;
         width: 100%;
     }
 

@@ -6,7 +6,7 @@ import coverVideo from "../../media/coverVideo.mp4";
 const Cover = () => {
     return (
         <div className="cover-container">
-            <video  className="video" src={coverVideo} autoPlay loop muted>
+            <video  className="video" src={coverVideo} autoPlay loop muted controls>
             </video>  
             <h1>Rafael Portillo Pérez</h1>     
             <p>Músico | Guitarrista | Compositor | Productor</p>
