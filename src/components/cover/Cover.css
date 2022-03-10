@@ -19,7 +19,7 @@
 
 .cover-container > h1 {
     color: white;
-    font-size: 34px;
+    font-size: 40px;
 }
 
 .cover-container > p {
@@ -30,7 +30,8 @@
 
 @media screen and (max-width: 760px) {
     .cover-container > h1 {
-        font-size: 50px;
+        margin-top: 200px;
+        font-size: 30px;
         text-align: center;
     }
     .cover-container > p {

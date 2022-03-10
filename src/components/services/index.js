@@ -4,7 +4,7 @@ export async function sendMessage (dataFromForm) {
     try {
 
         const response = await axios ({
-            url: 'http://localhost:8000/api/v1/contact_form',
+            url: 'https://notasweb.me/api/v1/contact_form/',
             method: 'POST',
             data: dataFromForm,
 

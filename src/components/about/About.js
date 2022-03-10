@@ -13,11 +13,11 @@ const About = () => {
                 <a href="https://www.instagram.com/yellowsandmb/" target="_blank" rel="noreferrer"> Yellow Sand</a>, 
                 <a href="https://www.instagram.com/fullsexband/" target="_blank" rel="noreferrer"> Full Sex </a>
                 y además lo he compaginado con mi proyecto personal,
-                <a href="https://www.instagram.com/blue_rhino_record/" target="_blank" rel="noreferrer"> Blue Rhino Record</a>, del que también soy productor.
+                <a href="https://www.instagram.com/blue_rhino_record/" target="_blank" rel="noreferrer"> Blue Rhino</a>, del que también soy productor.
                 </p>
             </div>
             <div className="about-img">
-                <img src={Foto} alt="about" />
+                <img className="responsive-about" src={Foto} alt="about" />
             </div>
         </div>
     )
