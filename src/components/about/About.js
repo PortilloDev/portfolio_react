@@ -17,7 +17,7 @@ const About = () => {
                 </p>
             </div>
             <div className="about-img">
-                <img src={Foto} alt="about" />
+                <img className="responsive-about" src={Foto} alt="about" />
             </div>
         </div>
     )

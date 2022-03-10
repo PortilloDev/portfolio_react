@@ -69,11 +69,18 @@
 .BrainhubCarousel__arrows:hover {
     border-color: black !important;
 }
-/*
+
 .BrainhubCarousel__track, .BrainhubCarousel__track--transition, .BrainhubCarousel__track--draggable{
-    margin-left: 1000px !important;
+    margin-left: 6000px !important;
+    margin-right: 6000px !important;
 }
-*/
+
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 @media screen and (max-width: 760px) {
     .carousel-container {
         flex-direction: column;
