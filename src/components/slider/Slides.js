@@ -29,7 +29,7 @@ const slidesInfo = [
     {
         src: Foto4,
         alt: "Foto 4",
-        desc: "Acustico en Parla con Toni"
+        desc: "Foto con el maestro Toni Del Campo"
     },
     {
         src: Foto5,
