@@ -17,18 +17,15 @@ const Slider = () => {
             </div>
 
             <Carousel 
-                plugins={['arrows', 'infinite', 'centered', 'autoPlay']}
-                slidesPerPage={2}
-                animationSpeed={100}
-                offset={50}
-                itemWidth={400}
+                plugins={['arrows', 'infinite', 'autoPlay']}
                 slides={Slides}
                 breakpoints={{
                     760: {
-                        slidesPerPage:1,
                         plugins:['infinite','autoPlay'],
-                        itemWidth: 250,
-                    },   
+                        },  
+                    500: {
+                        plugins:['infinite','autoPlay'],
+                    },
                 }}
                 
             />

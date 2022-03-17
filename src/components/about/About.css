@@ -32,11 +32,9 @@
 
 .responsive-about {
     width: 100%;
-    max-width: 600px;
+    max-width: 645px;
     height: auto;
 }
-
-
 @media screen and (max-width: 760px) {
     .about-container{
         flex-direction: column;
