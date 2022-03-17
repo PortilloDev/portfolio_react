@@ -7,7 +7,7 @@ import Foto5 from '../../media/foto5.jpg';
 import Foto6 from '../../media/foto6.jpg';
 import Foto7 from '../../media/foto7.jpg';
 import Foto8 from '../../media/foto8.jpg';
-
+import Foto9 from '../../media/foto9.jpg';
 import "./Slider.css";
 
 const slidesInfo = [
@@ -19,7 +19,7 @@ const slidesInfo = [
     {
         src: Foto2,
         alt: "Foto 2",
-        desc: "Ensayo con Full Sex"
+        desc: "En el estudio con Full Sex"
     },
     {
         src: Foto3,
@@ -50,6 +50,11 @@ const slidesInfo = [
         src: Foto8,
         alt: "Foto 8",
         desc: "Antes de un concierto"
+    },
+    {
+        src: Foto9,
+        alt: "Foto 9",
+        desc: "Ensayo con Full Sex"
     }
 ]
 

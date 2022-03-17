@@ -37,7 +37,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 70%;
+    width: 80%;
     padding-left: 30px;
     border-top-left-radius: 20px;
     opacity: 0.8;
@@ -70,10 +70,10 @@
     border-color: black !important;
 }
 
-.BrainhubCarousel__track, .BrainhubCarousel__track--transition, .BrainhubCarousel__track--draggable{
+/* .BrainhubCarousel__track, .BrainhubCarousel__track--transition, .BrainhubCarousel__track--draggable{
     margin-left: 6000px !important;
-    margin-right: 6000px !important;
-}
+    margin-right: 6000px !important; 
+} */
 
 .responsive {
     width: 100%;
@@ -95,4 +95,12 @@
     .slide-container {
         width: 100%;
     }
+    .responsive {
+        max-width: 575px;
+    }
+    .slide-desc > span {
+        font-size: 24px;
+       
+    }
 }
+

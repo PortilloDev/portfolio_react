@@ -32,8 +32,13 @@
     padding: 50px;
 }
 .spoty{
-
     border-radius:12px;
+}
+
+.spoty-title{
+    align-items: flex-start;
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 760px) {
     .info-container {
