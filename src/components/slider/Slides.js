@@ -8,6 +8,7 @@ import Foto6 from '../../media/foto6.jpg';
 import Foto7 from '../../media/foto7.jpg';
 import Foto8 from '../../media/foto8.jpg';
 import Foto9 from '../../media/foto9.jpg';
+import Foto10 from '../../media/foto10.jpg';
 import "./Slider.css";
 
 const slidesInfo = [
@@ -55,6 +56,11 @@ const slidesInfo = [
         src: Foto9,
         alt: "Foto 9",
         desc: "Ensayo con Full Sex"
+    },
+    {
+        src: Foto10,
+        alt: "Foto 10",
+        desc: "Yellow Sand"
     }
 ]
 

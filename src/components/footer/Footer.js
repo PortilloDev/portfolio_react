@@ -10,7 +10,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/rafa_porti_guitar/" target="_blank" rel="noreferrer">
                         <i className="fab fa-instagram instagram"></i>
                     </a>
-                    <a href="https://twitter.com/rafaportilloper" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/rafael.portillo.988" target="_blank" rel="noreferrer">
                         <i className="fab fa-facebook facebook"></i>
                     </a>
                     <a href="https://twitter.com/rafaportilloper" target="_blank" rel="noreferrer">
