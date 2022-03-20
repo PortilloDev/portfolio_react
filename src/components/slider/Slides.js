@@ -9,13 +9,14 @@ import Foto7 from '../../media/foto7.jpg';
 import Foto8 from '../../media/foto8.jpg';
 import Foto9 from '../../media/foto9.jpg';
 import Foto10 from '../../media/foto10.jpg';
+import Foto11 from '../../media/foto11.png';
 import "./Slider.css";
 
 const slidesInfo = [
     {
         src: Foto1,
         alt: "Foto 1",
-        desc: "Con Yellow Sand"
+        desc: ""
     },
     {
         src: Foto2,
@@ -60,6 +61,11 @@ const slidesInfo = [
     {
         src: Foto10,
         alt: "Foto 10",
+        desc: "Yellow Sand"
+    },
+    {
+        src: Foto11,
+        alt: "Foto 11",
         desc: "Yellow Sand"
     }
 ]
