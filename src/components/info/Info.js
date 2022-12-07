@@ -5,6 +5,21 @@ const Info = () => {
     return (
         <div className="info-container">
             <div className="info">
+                <div className='title-container'>
+                    <h1>Últimas novedades</h1>
+
+                    <div className="info">
+                        <p className="news-subTitle"> Novedades en el canal de YouTube!! </p>
+                    </div>
+                </div>
+            </div>
+            <div className="youtube-container">
+                
+                <p align="center">
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/Ao_yw4H8Hz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+            <div className="info">
                 <h1>Composiciones y temas</h1>
             </div>
             <div className="spoty-container">
