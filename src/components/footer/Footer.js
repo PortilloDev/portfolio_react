@@ -16,8 +16,8 @@ const Footer = () => {
                     <a href="https://twitter.com/rafaportilloper" target="_blank" rel="noreferrer">
                         <i className="fab fa-twitter twitter"></i>
                     </a>
-                    <a href="mailto:rafaportiperez@gmail.com" target="_blank" rel="noreferrer">
-                        <i className="fas fa-envelope envelope"></i>
+                    <a href="https://www.youtube.com/channel/UC96l79apfbgtAIg6lkQGmTQ" target="_blank" rel="noreferrer">
+                        <i className="fab fa-youtube fa-lg youtube"></i>
                     </a>
                 </div>
                 {/* div design */}
