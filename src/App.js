@@ -7,6 +7,7 @@ import Slider from "./components/slider/Slider";
 import Info from "./components/info/Info";
 import Footer from "./components/footer/Footer";
 import SectionContact from "./components/form/SectionContact";
+import {registerVisited} from './components/services/index';
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -19,7 +20,10 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, [scrollHeight]);
-  
+    useEffect(() => {
+        let status = registerVisited();
+        console.log('life the music!!');
+    }, []);
   return (
     <div className="App">
       <Navbar isScrolling={scrollHeight} />
