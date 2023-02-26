@@ -22,7 +22,7 @@ function App() {
   }, [scrollHeight]);
     useEffect(() => {
         let status = registerVisited();
-        console.log('life the music!!');
+        console.log(status);
     }, []);
   return (
     <div className="App">
