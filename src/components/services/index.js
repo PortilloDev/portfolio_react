@@ -19,6 +19,7 @@ export async function sendMessage (dataFromForm) {
 
 export async function registerVisited () {
     let previousPageUrl = document.referrer;
+    let message = "";
 
     if ( previousPageUrl === "" ) {
         previousPageUrl = document.URL
@@ -28,11 +29,12 @@ export async function registerVisited () {
         referrer: previousPageUrl
     })
         .then(function (response) {
-            console.log('Welcome Blue Rhino!!');
+            message = "Welcome Blue Rhino!!"
         })
         .catch(function (error) {
             console.log(error);
+            message = error
         });
-
+    return message;
 }
 
