@@ -5,7 +5,6 @@ import {sendMessage} from './../services/index';
 
 const FooterForm = () => {
     const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
-    //const [formularioNoEnviado, cambiarFormularioNoEnviado] = useState(false);
     
     const handleSubmit = (data) => {
         let status = ''

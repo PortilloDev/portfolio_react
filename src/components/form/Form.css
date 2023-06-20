@@ -1,25 +1,19 @@
 
 .section-contact{
-    display: flex;
-    background-color: white;
+    display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
     color: black;
     height: 71vh;
     padding: 100px 0 100px 0;
 	margin-bottom: 25vh;
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
-.contact-description {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    padding: 0 100px 0 100px;
-}
-.contact-form{
-    width: 45%;
-    display: flex;
-    align-self: center;
-    overflow: hidden;
-}
+
 
 .formulario {
 	width: 80%;
@@ -27,12 +21,13 @@
     border-radius: 30px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	display: inline-flex;
+	display: flex;
     align-content: stretch;
     flex-direction: column;
     flex-wrap: nowrap;
 	border: outset;
-
+	margin: auto;
+	max-width: 600px;
 }
 
 .formulario > div {

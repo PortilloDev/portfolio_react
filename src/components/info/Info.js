@@ -14,7 +14,7 @@ const Info = () => {
                 </div>
             </div>
             <div className="youtube-container">
-                
+
                 <p align="center">
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/Ao_yw4H8Hz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
@@ -35,8 +35,8 @@ const Info = () => {
                     <h5>Últimas colaboraciones </h5>
                 </div>
                 <iframe className="spoty"
-                        src="https://open.spotify.com/embed/track/0pSutDfygeHurVwSgovTJ3?utm_source=generator&theme=0"
-                        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spoty"></iframe>
+                    src="https://open.spotify.com/embed/track/0pSutDfygeHurVwSgovTJ3?utm_source=generator&theme=0"
+                    width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spoty"></iframe>
                 <div className="spoty-title">
                     <h5>Lo mejor de mis bandas</h5>
                 </div>
@@ -45,7 +45,7 @@ const Info = () => {
             <div className="info">
                 <h1>Trabajemos juntos y creemos algo único</h1>
             </div>
-            
+
         </div>
     )
 }

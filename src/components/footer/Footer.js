@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-sns">
+            <div className="footer-container">
                 {/* div links */}
                 <div className="sns-links">
                     <a href="https://www.instagram.com/rafa_porti_guitar/" target="_blank" rel="noreferrer">

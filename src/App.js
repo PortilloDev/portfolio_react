@@ -1,40 +1,39 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
-import Cover from "./components/cover/Cover";
-import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About";
-import Slider from "./components/slider/Slider";
-import Info from "./components/info/Info";
-import Footer from "./components/footer/Footer";
-import SectionContact from "./components/form/SectionContact";
-import {registerVisited} from './components/services/index';
+import React, { useEffect, useState } from 'react';
+
+import Rutas from "./routes/Routes";
+import Modal from "./components/modal/Modal";
+import { registerVisited } from './components/services/index';
+import { GiTriquetra } from 'react-icons/gi';
+
+const DIV_BUTTON_STYLE = {
+    position: 'relative',
+    zIndex: 1
+}
+const CONTENT_STYLE = {
+    background: 'red',
+    padding: '20px',
+    zIndex: 2
+}
 
 function App() {
-  const [scrollHeight, setScrollHeight] = useState(0);
 
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollHeight(position);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, [scrollHeight]);
+    // Function for register visited
     useEffect(() => {
         let status = registerVisited();
         console.log(status);
     }, []);
-  return (
-    <div className="App">
-      <Navbar isScrolling={scrollHeight} />
-      <Cover />
-      <About />
-      <Slider />
-      <Info />
-      <SectionContact/>
-      <Footer />
-    </div>
-  );
+
+    //function modal
+    const [isOpen, setIsOpen] = useState(GiTriquetra)
+    return (
+
+        <div className='layout'>
+            <Rutas />
+            <Modal open={isOpen} close={() => setIsOpen(false)} ></Modal>
+
+        </div>
+
+    );
 }
 
 export default App;

@@ -1,0 +1,101 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  position: relative;
+  color: white;
+}
+.logo{
+  width: 60%;
+  height: 60% !important;
+  border-radius: 50%;
+
+}
+.navbar-logo img {
+  height: 30px;
+  /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+
+}
+.navbar-menu li:hover{
+  background-color: rgb(185, 70, 185);
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-toggle {
+  display: none;
+  /* El botón hamburguesa estará oculto por defecto en pantallas grandes */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: inherit;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: -160px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-block-end: 16px;
+    gap: 16px;
+    background-color: var(--purple);
+    transition: top .3s ease;
+    z-index: -1;
+  }
+
+  .navbar-menu.active {
+    font-size: x-large !important;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: large;
+    transition: top .3s ease;
+    background-color: rgb(57, 56, 56);
+  }
+
+  .navbar-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .navbar-toggle svg {
+    width: 24px;
+    height: 24px;
+    color: #333;
+  }
+}
