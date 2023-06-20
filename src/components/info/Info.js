@@ -13,6 +13,15 @@ const Info = () => {
                     </div>
                 </div>
             </div>
+            <p  align="center">
+                <strong>ME PIRO!!</strong>
+                </p>
+            <div className="youtube-container">
+                
+                <p align="center">
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/qxicmTQEoNg" title="Me piro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
+            </div>
             <div className="youtube-container">
                 
                 <p align="center">

@@ -18,4 +18,8 @@
     line-height: 80px;
     color: white;
     cursor: pointer;
+
+}
+.navbar-span{
+    font-size: medium;
 }

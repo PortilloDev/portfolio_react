@@ -9,7 +9,7 @@ const Navbar = ({isScrolling }) => {
     return (
         <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null }`}> 
             <div className="navbar-logo" onClick={toTheTop}>
-                    Rafael Portillo
+                Rafael Portillo <span className='navbar-span'> Músico | Guitarrista | Compositor | Productor</span>
             </div>
         </nav>
     )
