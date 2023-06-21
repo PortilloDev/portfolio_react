@@ -16,7 +16,7 @@ const Abouts = () => {
     }, [scrollHeight]);
   return  (
     <div> 
-      <CoverImg heading="Sobre mi" text="Soy guitarrista y compositor"/>
+      <CoverImg heading="SOBRE MI" text="Soy guitarrista y compositor"/>
       <About />
     </div>
     );

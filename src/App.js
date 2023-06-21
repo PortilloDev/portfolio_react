@@ -27,10 +27,9 @@ function App() {
     const [isOpen, setIsOpen] = useState(GiTriquetra)
     return (
 
-        <div className='layout'>
+        <div>
             <Rutas />
             <Modal open={isOpen} close={() => setIsOpen(false)} ></Modal>
-
         </div>
 
     );

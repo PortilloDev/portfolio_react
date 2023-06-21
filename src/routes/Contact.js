@@ -17,7 +17,7 @@ const Contact = () => {
   return  (
     <div> 
 
-      <CoverImg heading="Contacto" text="Trabajemos juntos y creemos algo único"/>
+      <CoverImg heading="CONTACTO" text="Trabajemos juntos y creemos algo único"/>
       <SectionContact />
 
     </div>

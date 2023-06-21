@@ -5,19 +5,19 @@
 	justify-content: center;
 	align-items: center;
     color: black;
-    height: 71vh;
+    height: 80vh;
     padding: 100px 0 100px 0;
 	margin-bottom: 25vh;
 	padding: 10px;
 	margin-top: 5px;
 	margin-left: 5px;
+	
 }
 
 
 
 .formulario {
-	width: 80%;
-    background: #fff;
+	width: 100%;
     border-radius: 30px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -28,6 +28,10 @@
 	border: outset;
 	margin: auto;
 	max-width: 600px;
+	margin-top: 30px;
+	top: 100px;
+	bottom: 50px;
+    margin-bottom: 200px;
 }
 
 .formulario > div {
@@ -71,18 +75,20 @@
 
 .formulario button[type="submit"] {
 	display: block;
-	background: black;
+	background: rgb(182 164 182);
 	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
 	border: none;
 	cursor: pointer;
-	width: 50%;
+	width: 45%;
 	padding: 10px;
 	border-radius: 15px;
-	color: #fff;
+	color: #222;
 	font-size: 16px;
 	transition: .3s ease all;
 	font-family: 'Roboto', sans-serif;
+	margin-left: 15px;
+	
 }
 textarea[placeholder],
 input[placeholder] {
@@ -128,12 +134,12 @@ input[placeholder] {
 	}
 	.formulario {
 		width: 95%;
-		background: #fff;
 		border-radius: 30px;
 		padding: 20px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		text-align:left;
 		gap: 2px;
 		margin: auto;
+		margin-bottom: 200px;
 	}
 }

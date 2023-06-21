@@ -15,7 +15,9 @@
     margin-bottom: 10px;
   }
   
-
+ .design_autor p{
+  font-size: smaller !important;
+ }
   .social-icons a {
     display: flex;
     align-items: center;

@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className="social-icons">
+      <div className="flex flex-row text-center gap-8 text-4xl p-4">
         <a href="https://www.instagram.com/rafa_porti_guitar/" target="_blank" rel="noreferrer">
           <i className="fab fa-instagram instagram"></i>
         </a>
@@ -19,8 +19,9 @@ const Footer = () => {
         </a>
       </div>
       <div>
-        <a href="https://notasweb.me" target="_blank" rel="noreferrer" className="design_autor">
-          <p>© Diseñado por Iván Portillo, desarrollador y creador de contenido en Notasweb.me &copy;</p>
+        <a href="https://notasweb.me" target="_blank" rel="noreferrer" >
+          <p className="text-white text-xs">&copy; Diseñado por Iván Portillo, desarrollador y
+           creador de contenido en Notasweb.me </p>
         </a>
       </div>
 

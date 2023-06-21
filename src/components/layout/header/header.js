@@ -25,17 +25,17 @@ export default function Navbar() {
                 isMenuOpen ? "navbar-menu.active" : "navbar-menu"
             }>
                 <ul>
-                    <li >
-                        <Link to="/">Home</Link>
+                    <li  >
+                        <Link className='text-2xl' to="/">Home</Link>
                     </li>
                     <li >
-                        <Link to="/sobre-mi">Sobre mi</Link>
+                        <Link className='text-2xl' to="/sobre-mi">Sobre mi</Link>
                     </li>
                     <li >
-                        <Link to="/proyectos">Proyectos</Link>
+                        <Link className='text-2xl' to="/proyectos">Proyectos</Link>
                     </li>
                     <li >
-                        <Link to="/contacto">Contacto</Link>
+                        <Link className='text-2xl' to="/contacto">Contacto</Link>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
             <FiAlignRight
                 onClick={handleMenuToggle}
                 className='navbar-toggle'
-                size={'24px'}
+                size={'34px'}
                 title={'Toggle mobile menu visibility'}
             />
 

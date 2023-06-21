@@ -11,18 +11,21 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 function Rutas() {
   return (
     <BrowserRouter>
-    {/*Header*/}
-    <HeaderNav/>
-    {/*Content*/}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/proyectos" element={<Project/>} />
-        <Route path="/sobre-mi" element={<About/>} />
-        <Route path="/contacto" element={<SectionContact />} />
-      </Routes>
-    {/*footer*/}
-    <Footer/>
-  </BrowserRouter>
+      <div id='navbar-section'>
+        <HeaderNav />
+      </div>
+      <section className='w-full h-screen'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/proyectos" element={<Project />} />
+          <Route path="/sobre-mi" element={<About />} />
+          <Route path="/contacto" element={<SectionContact />} />
+        </Routes>
+      </section>
+      <div id='footer-section'>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 

@@ -1,5 +1,5 @@
 import "./Work.css";
-import Card from "../slider/Card"
+import Card from "../card/Card"
 import CardData from "./WorkCardData";
 import React from 'react'
 

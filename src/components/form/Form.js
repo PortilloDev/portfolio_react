@@ -60,9 +60,10 @@ const FooterForm = () => {
         >
             {({errors})=>(
                 <Form className="formulario" handleSubmit={handleSubmit}>
-                    <div>
+                  <div class="w-full px-3 mb-6 md:mb-0">
                         <label htmlFor="name">Nombre</label>
                         <Field
+                        className="appearance-none block w-full bg-gray-200 text-white border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             type="text"
                             name="name"
                             placeholder="Nombre"
@@ -73,7 +74,7 @@ const FooterForm = () => {
                         )}/>
                     </div>
 
-                    <div>
+                    <div class="w-full px-3 mb-6 md:mb-0">
                         <label htmlFor="email">Email</label>
                         <Field
                             type="email"
@@ -85,7 +86,7 @@ const FooterForm = () => {
                             <div className="error">{errors.email}</div>
                         )}/>
                     </div>
-                    <div>
+                    <div class="w-full px-3 mb-6 md:mb-0">
                         <label htmlFor="subject">Asunto</label>
                         <Field
                             type="text"
@@ -97,7 +98,7 @@ const FooterForm = () => {
                             <div className="error">{errors.subject}</div>
                         )}/>
                     </div>
-                    <div>
+                    <div class="w-full px-3 mb-6 md:mb-0">
                         <label htmlFor="comments">Mensaje</label>
                         <Field
                             name="comments"
