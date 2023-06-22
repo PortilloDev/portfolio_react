@@ -2,8 +2,8 @@ import React from 'react'
 import './Modal.css'
 import InfoModal from '../info/InfoModal'
 export default function Modal({children, open, close}) {
-    {/* cambiar por esto if(!open) */}
-    if(open) return null
+
+  if(!open) return null
     return (
         <>
         <div className="modal-overlay">
