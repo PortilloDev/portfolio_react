@@ -1,19 +1,10 @@
 import React, { useEffect, useState } from 'react';
-
 import Rutas from "./routes/Routes";
 import Modal from "./components/modal/Modal";
 import { registerVisited } from './components/services/index';
 import { GiTriquetra } from 'react-icons/gi';
 
-const DIV_BUTTON_STYLE = {
-    position: 'relative',
-    zIndex: 1
-}
-const CONTENT_STYLE = {
-    background: 'red',
-    padding: '20px',
-    zIndex: 2
-}
+
 
 function App() {
 
