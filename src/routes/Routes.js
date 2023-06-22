@@ -11,10 +11,10 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 function Rutas() {
   return (
     <BrowserRouter>
-      <div id='navbar-section'>
+      <div className="bg-black text-white">
         <HeaderNav />
       </div>
-      <section className='w-full h-screen'>
+      <section>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/proyectos" element={<Project />} />

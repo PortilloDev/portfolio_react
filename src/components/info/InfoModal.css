@@ -1,8 +1,7 @@
 .cover-container{
     position: relative;
-    padding-top: 5%;
+    padding-top: 2%;
 }
-
 .react-player {
     position: absolute;
     top: 0;

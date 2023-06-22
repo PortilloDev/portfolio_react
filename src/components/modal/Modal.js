@@ -7,9 +7,15 @@ export default function Modal({children, open, close}) {
         <>
         <div className="modal-overlay">
           <div className="modal-content">
-            <button className="modal-close" onClick={close}>
-              X
-            </button>
+            <div>
+              <div>
+                  <h1 className='text-xl lg:text-3xl font-bold font-mono'>Me Piro</h1>    
+              </div>
+              <button className="modal-close" onClick={close}>
+                X
+              </button>
+            </div>
+           
            <InfoModal/>
           </div>
         </div>

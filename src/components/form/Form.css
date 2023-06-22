@@ -5,16 +5,14 @@
 	justify-content: center;
 	align-items: center;
     color: black;
-    height: 80vh;
+    height: 100vh;
     padding: 100px 0 100px 0;
-	margin-bottom: 25vh;
+	margin-bottom: 15vh;
 	padding: 10px;
 	margin-top: 5px;
 	margin-left: 5px;
 	
 }
-
-
 
 .formulario {
 	width: 100%;
@@ -43,7 +41,7 @@
 	font-weight: 600;
 	font-size: 18px;
 	margin-bottom: 5px;
-	color: #1f1f1f;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -56,7 +54,7 @@
 	font-size: 18px;
 	padding: 10px;
 	margin-bottom: 5px;
-	color: #1f1f1f;
+	color: black;
 	font-family: 'Roboto', sans-serif;
 	resize: none;
 }
@@ -95,6 +93,7 @@ input[placeholder] {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
+	color:black;
 }
 .formulario button[type="submit"]:hover {
 	background: rgba(32, 29, 29, 0.349);
