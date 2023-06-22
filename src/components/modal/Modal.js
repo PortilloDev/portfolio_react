@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css'
 import InfoModal from '../info/InfoModal'
 export default function Modal({children, open, close}) {
-    {/* if(!open) return null */}
+    {/* cambiar por esto if(!open) */}
     if(open) return null
     return (
         <>
