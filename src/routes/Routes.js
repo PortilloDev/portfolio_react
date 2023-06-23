@@ -7,7 +7,7 @@ import HeaderNav from "../components/layout/header/header"
 import Footer from "../components/layout/footer/Footer"
 
 
-import { Route, Router, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 function Rutas() {
   return (
     <BrowserRouter>
@@ -15,12 +15,12 @@ function Rutas() {
         <HeaderNav />
       </div>
       <section>
-      <Router>
+      <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/proyectos" element={<Project />} />
             <Route path="/sobre-mi" element={<About />} />
             <Route path="/contacto" element={<SectionContact />} />
-        </Router>
+        </Routes>
       </section>
       <div id='footer-section'>
         <Footer />
