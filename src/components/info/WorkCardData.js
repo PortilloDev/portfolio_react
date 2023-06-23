@@ -9,7 +9,7 @@ const ProjectCardData = [
         text: "Último lanzamiento en solitario ",
         source: {
             youtube: "https://www.youtube.com/watch?v=qxicmTQEoNg",
-            spotify: "https://open.spotify.com/artist/3rkLLkLvBhvzH5OB301sJu"
+            spotify: "https://open.spotify.com/album/0hb7QJ3IcbP89JCfl9UX4G"
         }
 
     },

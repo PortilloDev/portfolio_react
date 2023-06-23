@@ -24,7 +24,7 @@ const InfoModal = () => {
                 </div>
                 <div className='flex flex-row justify-between  gap-6'>
                     <p className='text-base lg:text-xl  mt-6'>O escuchar la canción en  </p>
-                    <a className='mt-2' href="https://open.spotify.com/artist/3rkLLkLvBhvzH5OB301sJu" target="_blank" rel="noreferrer"><FaSpotify />Spotify</a>
+                    <a className='mt-2' href="https://open.spotify.com/album/0hb7QJ3IcbP89JCfl9UX4G" target="_blank" rel="noreferrer"><FaSpotify />Spotify</a>
                 </div>
                 
 
