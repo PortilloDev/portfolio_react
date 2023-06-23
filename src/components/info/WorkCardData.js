@@ -18,7 +18,7 @@ const ProjectCardData = [
         title: "Los Horizontes de Nowack y Sowi",
         text: "Mi primera producción propia",
         source: {
-            youtube: "https://www.youtube.com/embed/Ao_yw4H8Hz0",
+            youtube: "https://www.youtube.com/watch?v=Ao_yw4H8Hz0",
             spotify: "https://open.spotify.com/track/01TZrzE2UiHBX13MSh7zgS"
         }
         
