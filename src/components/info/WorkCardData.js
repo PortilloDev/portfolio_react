@@ -1,6 +1,7 @@
 import MePiro from '../../media/mepiro.jpeg';
 import Horizontes from '../../media/horizontes.jpeg';
 import FullSex from '../../media/fullsex.jpeg';
+import YellowSand from '../../media/yellowsand.jpeg';
 
 const ProjectCardData = [
     {
@@ -30,6 +31,24 @@ const ProjectCardData = [
         source: {
             youtube: "https://www.youtube.com/watch?v=-o96JZO7SNo",
             spotify: "https://open.spotify.com/embed/track/0pSutDfygeHurVwSgovTJ3?utm_source=generator&theme=0"
+        }
+    },
+    {
+        src: YellowSand,
+        title: "Oasis",
+        text:  "Fundador, guitarrista y compositor",
+        source: {
+            youtube: "https://www.youtube.com/watch?v=hkzIsXL8o6s",
+            spotify: "https://open.spotify.com/intl-es/track/5HuQTi6wDAMPuYVwuEtKKK"
+        }
+    },
+    {
+        src: YellowSand,
+        title: "Reina Cuervo",
+        text:  "Fundador, guitarrista y compositor",
+        source: {
+            youtube: "https://www.youtube.com/watch?v=QfXs6mTAZG0",
+            spotify: "https://open.spotify.com/intl-es/track/3VtEBNCh2Coui05Qxz0V8z"
         }
     }
 

@@ -4,3 +4,14 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/* App.css */
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Asegúrate de que el contenido principal empuje al footer hacia abajo */
+main {
+    flex: 1;
+}

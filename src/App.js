@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Rutas from "./routes/Routes";
-import Modal from "./components/modal/Modal";
 import { registerVisited } from './components/services/index';
-import { GiTriquetra } from 'react-icons/gi';
 
 
 
@@ -13,14 +11,10 @@ function App() {
         let status = registerVisited();
         console.log(status);
     }, []);
-
-    //function modal
-    const [isOpen, setIsOpen] = useState(GiTriquetra)
     return (
 
-        <div>
+        <div className="app-wrapper">
             <Rutas />
-            <Modal open={isOpen} close={() => setIsOpen(false)} ></Modal>
         </div>
 
     );
