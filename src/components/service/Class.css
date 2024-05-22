@@ -63,3 +63,9 @@
 h1 {
     font-size: xx-large;
 }
+@media (max-width: 768px) {
+    .contact-info {
+        text-align: center;
+        margin-top: 130px;
+    }
+  }
