@@ -55,7 +55,7 @@ export default function Navbar() {
                                 </li>
                                 <li> <Link className='text-2xl' to="/contacto">Contacto</Link>
                                 </li>
-                                <li> <Link className='text-2xl' to="/contacto">Clases de Guitarra</Link>
+                                <li> <Link className='text-2xl' to="/clases">Clases de Guitarra</Link>
                                 </li>
                             </ul>
                         </div>
