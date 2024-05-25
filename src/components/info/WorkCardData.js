@@ -24,7 +24,6 @@ const ProjectCardData = [
         }
         
     },
-    ,
     {
         src: YellowSand,
         title: "Oasis",
