@@ -18,7 +18,7 @@ export default function Navbar() {
                     <div className="flex w-1/3 space-x-3 justify-items-star">
                         <div>
                             <Link to="/">
-                                <img src={Logo} alt='logo' className='rounded-full w-28  text-start'></img>
+                                <img src={Logo} alt='logo' loading="lazy" className='rounded-full w-28  text-start'></img>
                             </Link>
                         </div>
                     </div>

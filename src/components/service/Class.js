@@ -9,7 +9,7 @@ const Class = () => {
             <h1 className="class-title">Clases de Guitarra Online</h1>
             <div className="class-text">
                 <div className="intro">
-                    <img src={ContactImage} alt="Contacto" className="contact-img" />
+                    <img src={ContactImage} alt="Contacto" loading="lazy" className="contact-img" />
                     <p>Si te gusta mi trabajo y quieres que te de clases de guitarra, no dudes en ponerte en contacto conmigo, no importa si tienes conocimientos previos o empiezas de cero. Me apasiona enseñar y ayudar a mis alumnos a conseguir sus objetivos.</p>
                 </div>
                 <p>Doy clases de guitarra eléctrica y acústica, para todas las edades. Aprenderemos técnica, acordes, escalas, armonía y diferentes estilos. Adapto las clases a las necesidades e inquietudes del alumno.</p>

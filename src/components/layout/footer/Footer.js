@@ -17,6 +17,9 @@ const Footer = () => {
         <a href="https://www.youtube.com/channel/UC96l79apfbgtAIg6lkQGmTQ" target="_blank" rel="noreferrer">
           <i className="fab fa-youtube fa-lg youtube"></i>
         </a>
+        <a href="https://www.tiktok.com/@blue_rhino_records" target="_blank" rel="noreferrer">
+          <i className="fab fa-tiktok fa-lg tiktok"></i>
+        </a>
       </div>
       <div>
         <a href="https://notasweb.me" target="_blank" rel="noreferrer" >
