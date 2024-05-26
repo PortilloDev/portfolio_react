@@ -1,5 +1,5 @@
 /*
-  cache-control: max-age=604800
-  cache-control: no-cache
-  cache-control: must-revalidate
-  cache-control: public
+  cache-control: public, max-age=604800, must-revalidate
+
+/service-worker.js
+  cache-control: public, max-age=0, must-revalidate
