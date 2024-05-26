@@ -1,8 +1,13 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
 [[headers]]
   for = "/*"
   [headers.values]
-  cache-control = '''
-  max-age=604800,
-  no-cache,
-  public
-  must-revalidate'''
+    cache-control = "max-age=604800, no-cache, public, must-revalidate"
+
+[[headers]]
+  for = "/service-worker.js"
+  [headers.values]
+    cache-control = "public, max-age=0, must-revalidate"
