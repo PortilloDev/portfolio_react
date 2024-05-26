@@ -9,7 +9,7 @@ const CoverImage = () => {
         <div className="flex items-center justify-center h-screen w-full">
 
             <div className="w-full h-full">
-                <video className='object-cover h-full w-full' loading="lazy" src={coverVideo} autoPlay loop muted type="video/mp4">
+                <video className='object-cover h-full w-full' src={coverVideo} autoPlay loop muted type="video/mp4">
                 </video>
             </div>
         </div>

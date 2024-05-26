@@ -27,7 +27,7 @@ const About = () => {
             <div className="right">
                 <div className="img-container">
                     <div className='img-stack top'>
-                        <img src={Foto} alt="true" loading="lazy"></img>
+                        <img src={Foto} alt="true"></img>
                     </div>
                 </div>
             </div>

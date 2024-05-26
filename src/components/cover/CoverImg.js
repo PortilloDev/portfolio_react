@@ -9,7 +9,7 @@ class  Project extends Component {
                    
                 </div>
                 <div className=" w-full h-full lg:h-96 lg:object-fill">
-                    <img className='object-cover h-full w-full' loading="lazy" src={Photo} alt={Photo}></img>
+                    <img className='object-cover h-full w-full' src={Photo} alt={Photo}></img>
                 </div>
             </div>
           )

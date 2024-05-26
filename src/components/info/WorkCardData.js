@@ -1,7 +1,7 @@
-import MePiro from '../../media/mepiro.jpeg';
+import MePiro from '../../media/mepiro.jpg';
 import Horizontes from '../../media/horizontes.jpeg';
-import FullSex from '../../media/fullsex.jpeg';
-import YellowSand from '../../media/yellowsand.jpeg';
+import FullSex from '../../media/fullsex.jpg';
+import YellowSand from '../../media/yellowsand.jpg';
 
 const ProjectCardData = [
     {

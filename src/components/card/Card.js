@@ -7,7 +7,7 @@ export const Cards = (props) => {
   return (
     <div className="max-w-sm rounded-md overflow-hidden shadow-lg pb-16 mb-14">
 
-      <img className="w-full" src={props.src} alt={props.title} loading="lazy" />
+      <img className="w-full" src={props.src} alt={props.title}/>
       <div className="px-6 py-4 bg-white">
         <div className="font-bold text-xl mb-2 text-center">
           {props.title}

@@ -5,6 +5,9 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className="flex flex-row text-center gap-8 text-4xl p-4">
+        <a href="https://www.tiktok.com/@blue_rhino_records" target="_blank" rel="noreferrer">
+          <i className="fab fa-tiktok fa-lg tiktok"></i>
+        </a>
         <a href="https://www.instagram.com/rafa_porti_guitar/" target="_blank" rel="noreferrer">
           <i className="fab fa-instagram instagram"></i>
         </a>
@@ -16,9 +19,6 @@ const Footer = () => {
         </a>
         <a href="https://www.youtube.com/channel/UC96l79apfbgtAIg6lkQGmTQ" target="_blank" rel="noreferrer">
           <i className="fab fa-youtube fa-lg youtube"></i>
-        </a>
-        <a href="https://www.tiktok.com/@blue_rhino_records" target="_blank" rel="noreferrer">
-          <i className="fab fa-tiktok fa-lg tiktok"></i>
         </a>
       </div>
       <div>
