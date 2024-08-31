@@ -9,7 +9,7 @@ const ProjectCardData = [
         title: "Me Piro",
         text: "Último lanzamiento en solitario ",
         source: {
-            youtube: "https://www.youtube.com/watch?v=qxicmTQEoNg",
+            youtube: "https://youtu.be/-r_Q5LV9VTE?si=sZPTjlpzgLIIRquL",
             spotify: "https://open.spotify.com/album/0hb7QJ3IcbP89JCfl9UX4G"
         }
 
@@ -19,7 +19,7 @@ const ProjectCardData = [
         title: "Los Horizontes de Nowack y Sowi",
         text: "Mi primera producción propia",
         source: {
-            youtube: "https://www.youtube.com/watch?v=Ao_yw4H8Hz0",
+            youtube: "https://youtu.be/J8UP6diSoFE?si=vBKzqPuH7lI3mpB5",
             spotify: "https://open.spotify.com/track/01TZrzE2UiHBX13MSh7zgS"
         }
         
